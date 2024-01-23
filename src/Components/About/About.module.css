@@ -1,0 +1,137 @@
+.main {
+    height: 100%;
+    width: 100%;
+    padding-top: 5rem;
+}
+
+.aboutcontent{
+    display: flex;
+    flex:1;
+    justify-content: center;
+    align-items: center;
+    background-color: whitesmoke;
+    padding-bottom: 3rem;
+
+}
+
+.aboutcontent1{
+    width: 50%;
+    padding-left: 4rem;
+}
+
+.aboutcontent2{
+    width: 50%;
+    padding-left: 3rem;
+
+
+}
+
+.btn{
+    padding: 1rem;
+    background-color: aliceblue;
+    border-radius: 35%;
+    font-size: medium;
+    font-weight: 300;
+    color:skyblue;
+    border:1px solid skyblue;
+}
+
+.btn:hover{
+    background: skyblue;
+    color: white;
+}
+
+.image{
+    background: url(../../assets/about-hero.png);
+    width: 90%;
+    height: 30rem;
+    background-size: contain;
+    background-repeat: no-repeat;
+    
+}
+
+.abouttext{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    padding-inline: 8rem;
+}
+
+.footer{
+    height: 5rem;
+    border-top: 1px solid wheat ;
+    display: flex;
+    justify-content:  space-around;
+}
+
+
+.maintitle{
+    text-decoration: none;
+    color: #000;
+    position: relative;
+}
+
+.maintitle:hover{
+    text-decoration: underline;
+    transition: 1s ease-in-out;
+}
+
+
+.navtext{
+    font-size: medium;
+     /* font-family: Arial, Helvetica, sans-serif; */
+     font-weight: 900;
+  
+ 
+ }
+
+ .arrow{
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    padding: 1rem;
+    background-color:skyblue;
+    color: white;
+    border: none;
+    height: 3rem;
+ }
+ 
+
+ @media screen and (max-width:1084px) {
+
+    .aboutcontent{
+        display: flex;
+        flex-direction: column;
+
+    }
+
+    .aboutcontent1{
+        width: 40%;
+    }
+
+    .aboutcontent2{
+        width: 80%;
+        padding-top: 1rem;
+    }
+
+    .image{
+        width: 100%;
+        
+    }
+
+    .abouttext{
+        width: 80%;
+        padding-inline: 1rem;
+    }
+
+    .footer{
+        height: 22rem;
+        border-top: 1px solid wheat ;
+        display: flex;
+        gap: 0.1rem;
+        align-items: center;
+        flex-direction: column;
+    }
+
+
+ }

@@ -1,0 +1,100 @@
+.contactmain{
+    width: 100%;
+    height: 40rem;
+    background-color: whitesmoke;
+    display: flex;
+    flex-direction: column;
+    padding-top: 10rem;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.contacttext{
+    font-size: 2.5rem;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.formdetails>form{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    padding: 3rem;
+    justify-content: center;
+    text-align: center;
+}
+
+.label{
+    display: flex;
+}
+
+.labelitems{
+    font-size: medium;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 300;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 3rem;
+}
+
+.contactbtn {
+    width: 30%;
+    padding: 0.5rem;
+    color: white;
+    background-color: orange;
+    font-size: larger;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 300;
+    border: none;
+    border-radius: 5px;
+}
+
+.label2{
+    padding-left: 3rem ;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+   }
+
+@media screen and (max-width:1084px) {
+    .contactmain{
+     
+        width: 100%;
+        background-color: aqua;
+        padding-top:3rem ;
+    }
+
+   .number{
+    width: 50%;
+   }
+
+   .label{
+    display: flex;
+    padding-left: 1rem;
+
+   }
+
+   .label1{
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    padding-left:0.5rem;
+   }
+
+   .label2{
+    padding-left: 3rem ;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+   }
+
+ 
+
+ 
+
+
+
+}
+
+

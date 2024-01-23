@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react'
+import React, { useState } from 'react'
 import styles from './User.module.css'
 import { useNavigate } from 'react-router-dom';
 
@@ -7,7 +7,7 @@ import { useNavigate } from 'react-router-dom';
 const Userdetails = () => {
     const navigate = useNavigate();
 
-    const [isFormSubmitted, setIsFormSubmitted] = useState(false);
+    // const [isFormSubmitted, setIsFormSubmitted] = useState(false);
     const [formData,setFormData] =useState({
         username:'',
         email:'',
@@ -54,7 +54,7 @@ const Userdetails = () => {
               alert('Please fill in all fields');
             }
 
-            setIsFormSubmitted(true);
+            // setIsFormSubmitted(true);
           };
 
        

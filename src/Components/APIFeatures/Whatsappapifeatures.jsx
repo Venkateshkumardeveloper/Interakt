@@ -79,7 +79,7 @@ const Whatsappapifeatures = () => {
                 <h3>Bulk Campaigns & Broadcasts</h3>
                 <h5>
                   Set up one-time or recurring campaigns and share personalized,
-                  automated alerts to customers.
+                  automated.
                 </h5>
               </div>
             </div>

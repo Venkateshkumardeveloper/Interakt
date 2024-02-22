@@ -1,5 +1,7 @@
 import React, { useState } from "react";
 import styles from "./Contact.module.css";
+import 'bootstrap/dist/css/bootstrap.min.css';
+
 
 const Contact = () => {
   const [formData, setFormData] = useState({
@@ -38,7 +40,7 @@ const Contact = () => {
           <h3 className={styles.contacttext}>Details</h3>
         </div>
         <div className={styles.formdetails}>
-          <form onSubmit={handleSubmit}>
+          <form onSubmit={handleSubmit} class="row row-cols-lg-auto g-3 align-items-center">
             <div className={styles.label}>
             <label className={styles.labelitems}>
               Name:
@@ -48,7 +50,7 @@ const Contact = () => {
                 value={formData.username}
                 onChange={handleInputChange}
                 style={{ width: "15rem", height: "1.25rem" }}
-                placeholder="username"
+                placeholder="username" class="form-control"
               />
             </label>
             </div>
@@ -61,7 +63,7 @@ const Contact = () => {
                 value={formData.email}
                 placeholder="Email"
                 onChange={handleInputChange}
-                style={{ width: "15rem", height: "1.25rem" }}
+                style={{ width: "15rem", height: "1.25rem" }} class="form-control"
               />
             </label>
             </div>
@@ -73,7 +75,7 @@ const Contact = () => {
                 name="gender"
                 value={formData.gender}
                 onChange={handleInputChange}
-                style={{ width: "15rem", height: "1.25rem" }}
+                style={{ width: "15rem", height: "1.25rem" }}class="form-control"
               >
                 <option value="">-- Select --</option>
                 <option value="male">Male</option>
@@ -84,7 +86,7 @@ const Contact = () => {
             </div>
             <div className={styles.label1}>
             <label htmlFor="" className={styles.labelitems}>
-              Whatsapp No:
+              mobile:
               <input
                 type="tel"
                 name="phone"
@@ -94,20 +96,20 @@ const Contact = () => {
                 maxLength={10}
                 onChange={handleInputChange}
                 style={{ width: "15rem", height: "1.25rem" }}
-                className={styles.number}
+                className={styles.number} class="form-control"
               />
             </label>
             </div>
             <div className={styles.label1}>
             <label htmlFor="" className={styles.labelitems}>
-              Date of Birth:
+              D.O.B:
               <input
                 type="date"
                 name="dob"
                 value={formData.dob}
                 placeholder="dob"
                 onChange={handleInputChange}
-                style={{ width: "15rem", height: "1.25rem" }}
+                style={{ width: "15rem", height: "1.25rem" }} class="form-control" 
               />
             </label>
             </div>
@@ -121,7 +123,7 @@ const Contact = () => {
               cols="30"
               rows="10"
               style={{ width: "15rem", height: "1.25rem" }}
-              className={styles.textarea}
+              className={styles.textarea} class="form-control"
             ></textarea>
           
             <button type="submit" className={styles.contactbtn}>

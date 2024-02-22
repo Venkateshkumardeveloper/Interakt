@@ -2,13 +2,8 @@
     padding-top: 5rem;
     position: fixed;
     z-index: 3;
-    width: 100%;
-    height: 70vh;
-   
- 
-
-
-    
+    width: 80%;
+    height: 60vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -21,6 +16,8 @@
     /* margin-top: 5rem; */
     border-radius: 20px;
     padding-bottom: 2rem;
+    margin-left: 7%;
+    margin-top: 3%;
 }
 
 .formdetails>form{
@@ -46,4 +43,10 @@ label>input[type="tel"]{
     background-color: orange;
     color: aliceblue;
     font-size: large;
+}
+
+.cross{
+    position: absolute;
+    top: 0;
+    right: 0;
 }

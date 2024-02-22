@@ -1,6 +1,10 @@
 import React, { useState } from 'react'
 import styles from './User.module.css'
 import { useNavigate } from 'react-router-dom';
+import { GiTireIronCross } from "react-icons/gi";
+
+import 'bootstrap/dist/css/bootstrap.min.css';
+
 
 
 
@@ -57,7 +61,11 @@ const Userdetails = () => {
             // setIsFormSubmitted(true);
           };
 
-       
+       function change(){
+        navigate('/home');
+
+
+       }
   
 
     
@@ -67,12 +75,12 @@ const Userdetails = () => {
        
         <h2>User details</h2>
         <div className={styles.formdetails}>
-        <form action="" onSubmit={handleSubmit} >
+        <form action="" onSubmit={handleSubmit} class="row row-cols-lg-auto g-3 align-items-center" >
             <label htmlFor="">
                 <span>  Name:</span>
                
               
-                <input type="text"
+                <input type="text" 
                 name='username'
                  value={formData.username}
                  onChange={handleInputChange}   placeholder='Full Name' required />
@@ -88,7 +96,7 @@ const Userdetails = () => {
             </label>
 
             <label htmlFor="">
-                <span>MobileNo:</span>
+                <span>Mobile:</span>
                 <input type="tel" maxLength={10} placeholder='mobileNo'
                 name='phone' value={formData.phone} onChange={handleInputChange} required minLength={10} />
             </label>
@@ -97,6 +105,8 @@ const Userdetails = () => {
 
             
         </form>
+        <GiTireIronCross  className={styles.cross} onClick={change}/>
+
         </div>
      </div>
     </>
